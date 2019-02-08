@@ -46,7 +46,7 @@ namespace BMI
 
                 bmi = Math.Round(bmi, 2);
                 double correct_mass = 0;
-                string resutl = "Twoje BMI: " + bmi.ToString();
+                string resutl = "Your BMI: " + bmi.ToString();
                 int p;
                 if (bmi < 16)
                 {
@@ -70,7 +70,7 @@ namespace BMI
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nniedowaga\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + "kg a "; ;
+                    resutl += "\nNiedowaga\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + "kg a "; ;
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
@@ -115,18 +115,13 @@ namespace BMI
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
                 }
-                resutl += "\nZamknąc program?";
+                resutl += "\nClose?";
                 message_box(resutl, "Result");
             }
             catch (Exception ex)
             {
                 message_box("Something gone wrong\nDo You want close?", "Error");
             }
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
         }
     }
