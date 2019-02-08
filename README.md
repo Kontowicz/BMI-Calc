@@ -1,2 +1,7 @@
 # BMI-Calc
-Pragram oblicający BMI na podstawie wprowadzonych danych. Po obliczeniu, jeśli BMI jest nieprawidłowe podaje prawidłową wagę oraz o ile waga odbiega od normy.
+Body mass index calculator. 
+<p align="center">
+  <img src="../master/ss.PNG" width="350" title="BMI calc.">
+  <br>
+  <em>Program main window.</em>
+</p>
