@@ -23,9 +23,7 @@ namespace BMI
             DialogResult result;
             result = MessageBox.Show(message, title, buttons);
             if (result == System.Windows.Forms.DialogResult.Yes)
-            {
                 System.Diagnostics.Process.GetCurrentProcess().Kill();
-            }
             else
             {
                 mass_text_box.Text = String.Empty;
@@ -52,7 +50,7 @@ namespace BMI
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nNiedowaga\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + "kg a ";
+                    resutl += "\nUnderweight\nThe correct weight between:" + correct_mass.ToString() + "kg a ";
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
@@ -61,7 +59,7 @@ namespace BMI
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nWychudzenie\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + "kg a ";
+                    resutl += "\nEmaciation\nThe correct weight between:" + correct_mass.ToString() + "kg a ";
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
@@ -70,20 +68,20 @@ namespace BMI
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nNiedowaga\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + "kg a "; ;
+                    resutl += "\nUnderweight\nThe correct weight between:" + correct_mass.ToString() + "kg a "; ;
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
                 }
                 if ((bmi >= 18.5) && (bmi <= 24.99))
                 {
-                    resutl += "\nWaga prawidłowa";
+                    resutl += "\nThe correct weight";
                 }
                 if ((bmi >= 25) && (bmi <= 29.99))
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nNadwaga\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + "kg a "; ;
+                    resutl += "\nOverweight\nThe correct weight between:" + correct_mass.ToString() + "kg a "; ;
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
@@ -92,7 +90,7 @@ namespace BMI
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nI stopień otyłości\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + "kg a ";
+                    resutl += "\nI Obesity\nThe correct weight between:" + correct_mass.ToString() + "kg a ";
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
@@ -101,7 +99,7 @@ namespace BMI
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nII stopień otyłości\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + " "; ;
+                    resutl += "\nII Obesity\nThe correct weight between:" + correct_mass.ToString() + " "; ;
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
@@ -110,7 +108,7 @@ namespace BMI
                 {
                     correct_mass = 18.5 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
-                    resutl += "\nostyłość skrajna\nPrawidłowa waga pomiędzy:" + correct_mass.ToString() + " "; ;
+                    resutl += "\nExtreme obesity\nThe correct weight between:" + correct_mass.ToString() + " "; ;
                     correct_mass = 24.99 * Math.Pow(height, 2);
                     correct_mass = Math.Floor(correct_mass);
                     resutl += correct_mass.ToString() + "kg ";
